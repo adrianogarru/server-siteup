@@ -1,8 +1,8 @@
 ### Server-Siteup
 
-#### Exential Server to check if service are up with log file.
+#### Essential Server to check if services are up with log file.
 
-The purpose of this script is to check the service status of Apache, MySQL and the HTTP request on the webpage, in case one of these service is down an email alert will be triggered, all the check will be saved in a log file.
+The purpose of this script is to check the service status of Apache, MySQL and the HTTP request on the web page, in case one of these service is down an email alert will be triggered, all the check will be saved in a log file.
 This script has been developed and tested on instance CentOS 8.
 
 **Author:** Adriano Garruba [website](https://adrianogarruba.com/) </br>
@@ -12,28 +12,28 @@ This script has been developed and tested on instance CentOS 8.
 ### How to use it
 
 1. Script is located in the file called: **server-siteup.sh**
-2. Before proceding it is suggested to configure it as per next chapter "Configuration and Functionalities" 
- - Mailx or different email service should be installed
+2. Before proceeding it is suggested to configure it as per next chapter "Configuration and Functionalities"
+- Mailx or different email service should be installed.
 
 ### Configuration and Functionalities
 
 This script has been tested on instance CentOS 8, some commands should be configured as per the log path and log file name that in some Linux version can be different as well as the service commands.
- - Package Mailx is needed for email alerting.
+- Package Mailx is needed for email alerting.
 
 **Functionalities**
 
 - Check the status of Apache if is running or dead
-- Check the status of MySql if is running or dead
+- Check the status of MySQL if is running or dead
 - Check the status code if is 200 in the website
-- Email alert in case the status is different than running or the 200 code for at least 1 of the services.
+- Email alert in case the status is different from running or the 200 code for at least 1 of the services.
 - Log tracking, 2 logs one that will log each action and second error.log that will track only error.
 
 **Configuration**
 
-- First of all is suggested to create a folder to save the log files
-- The variables between rows 8 and 15 should be revised as per your configuration, the name of variables have been organized in order to be clear for their purpose.
-- As indicated previusily one email service should be installed on your server, (In this script has been used mailx)
-- The automatization of the script should be configured in the your crontab
+- First of all it is suggested to create a folder to save the log files
+- The i between rows 8 and 15 should be revised as per your configuration, the names of variables have been organized in order to be clear for their purpose.
+- As indicated previously one email service should be installed on your server, (In this script has been used mailx)
+- The automatization of the script should be configured in your crontab
 
 ### Consideration
 
